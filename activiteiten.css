@@ -1,0 +1,65 @@
+/* Copyright (c) 2012, HIT Scouting Nederland */
+
+body {
+	font-family: Helvetica,Arial, Sans-Serif;
+	font-size: 11pt;
+}
+.headerAlgemeen, .headerPlaats {
+	display: none;
+}
+
+a, a:visited {
+	color: #31a529;
+}
+
+a:hover {
+	color: #19358d;
+}
+
+table {
+	border-spacing: 0px;
+}
+table, table td { 
+	border: solid #C7E0C5 1px;
+}
+
+.first-child {
+	text-align: left;
+}
+
+.kolom2, .kolom3 {
+	font-size: small;
+}
+
+.kolom1 {
+	width: 200px;
+	text-align: left;
+}
+.kolom2 {
+	width: 60px;
+}
+.kolom3 {
+	width: 70px;
+}
+.kolom4 {
+	
+}
+th {
+	background-color: #C7E0C5;
+}
+th a {
+	font-size: medium;
+}
+
+td {
+	background-color: white;
+	text-align: center;
+}
+
+td img, td a {
+	float: left;
+}
+
+td img {
+	margin: 0px;
+}

@@ -1,0 +1,32 @@
+/* Copyright (c) 2012, HIT Scouting Nederland */
+
+body {
+	font-family: Helvetica,Arial, Sans-Serif;
+	font-size: 11pt;
+}
+
+a, a:visited {
+	color: #31a529;
+}
+
+a:hover {
+	color: #19358d;
+}
+
+div#kampen {
+	text-align: left;
+}
+
+div#kampen li {
+	list-style: decimal;
+}
+
+div#kampen li .score {
+	float: right;
+	font-size: x-small;
+	width: 2em;
+}
+
+legend {
+	font-weight: bold;
+}

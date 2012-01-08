@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Copyright (c) 2012, HIT Scouting Nederland -->
+<head>
+	<title>Kies een activiteit</title>
+	<!-- Hierdoor openen de links in het iframe de nieuwe pagina in het parentframe -->
+	<base target="_parent" />
+	
+	<link rel="stylesheet" type="text/css" href="hitkiezer.css" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- Nodig voor handige iteraties en html-generatie. -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!-- Nodig voor bewaren keuzes. -->
+	<script type="text/javascript" src="jquery.cookies.2.2.0.min.js"></script>
+	<!-- Nodig voor de data uit de KampRegistratie, dit bestand wordt gegenereerd vanuit de hit-site-creator. -->
+	<script type="text/javascript" src="hit-data-2012-json.js"></script>
+	<script type="text/javascript" src="http://www.verster.com/hitit/hit2012aantal.js"></script>
+	<!-- Nodig voor de logica van de kiezer. -->
+	<script type="text/javascript" src="hitkiezer.js"></script>
+</head>
+
+<body onload="init()">
+
+	<p>Met de HIT-kiezer kun je kijken welke HIT er bij jou past, op basis van je leeftijd
+	   tijdens de HIT, je budget, en de dingen die je absoluut wel of absoluut niet leuk vindt.
+	   Je gebruikt hem zo:
+	</p>
+	<form id="filter" name="filter">
+		<p><strong>Stap 1:</strong> Vul eerst je geboortedatum in. Je ziet nu alle HITs voor jouw leeftijd.</p>
+		<p>
+			<select name="geboortedag" id="geboortedag" onchange="updateGeboorteDatumEvent();" class="cookiestore">
+				<option value=""></option>
+			</select>
+				<select name="geboortemaand" id="geboortemaand" onchange="updateGeboorteDatumEvent();" class="cookiestore">
+				<option value=""></option>
+			</select>
+				<select name="geboortejaar" id="geboortejaar" onchange="updateGeboorteDatumEvent();" class="cookiestore">
+				<option value=""></option>
+			</select>
+			<span id="leeftijd"></span>
+		</p>
+	
+		<p><strong>Stap 2:</strong> Geef het bedrag aan dat je maximaal voor de HIT wilt betalen.</p>
+		<label for="budget">Maximaal €&nbsp;</label>
+		<select name="budget" id="budget" onchange="updateBudgetEvent();" class="cookiestore">
+			<option value="-1"></option>
+		</select>
+			
+				<p><strong>Stap 3:</strong> Klik op de icoontjes die passen bij wat je graag wilt bij een HIT, of juist niet.</p>
+		<ul>
+		    <li>Geen rand: Dit maakt je niet uit</li>
+		    <li>Groene rand: Dit wil je graag (1x klikken)</li>
+		    <li>Rode rand: Dit wil je liever niet (2x klikken)</li>
+		</ul>
+		<!-- Placeholder voor de pictogrammen / icoontjes -->
+		<div id="pictos"></div>
+		
+		<br />
+		<fieldset>
+			<!-- Placeholder voor het aantal vind-resultaten. -->
+				<legend>Gevonden kampen: <span id="count"></span></legend>
+		    <p>Je ziet nu hier de HITs waarvan de HIT-kiezer denkt dat die het beste bij je passen.
+	   		   Succes met je keuze!</p>
+	
+			<!-- Placeholder voor de lijst met kamponderdelen. -->
+			<div id="kampen"></div>
+		</fieldset>
+	</form>
+
+</body>
+</html>
