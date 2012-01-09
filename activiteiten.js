@@ -1,6 +1,9 @@
 // Copyright (c) 2012, HIT Scouting Nederland
 
+$(init);
+
 function init() {
+	fixStupidBrowsers();
 	extend();
 	verwerkDeelnemerAantallen();
 	var plaatsParam = $.getUrlVar('plaats');
@@ -143,11 +146,24 @@ function verwerkDeelnemerAantallen() {
 		$.each(hit.hitPlaatsen, function(p, plaats) {
 			$.each(plaats.kampen, function(k, kamp) {
 				$.each(inschrijvingen.kampen, function(i, inschrijving) {
-					if (kamp.shantiformuliernummer == inschrijving.formuliernummer) {
+					if (inschrijving != null && kamp.shantiformuliernummer == inschrijving.formuliernummer) {
 						kamp.gereserveerd = inschrijving.gereserveerd;
 					}
 				});				
 			});
 		});
+	}
+}
+
+function fixStupidBrowsers() {
+	if (!Array.indexOf) {
+		Array.prototype.indexOf = function (obj, start) {
+			for (var i = (start || 0); i < this.length; i++) {
+				if (this[i] == obj) {
+					return i;
+				}
+			}
+			return -1;
+		};
 	}
 }

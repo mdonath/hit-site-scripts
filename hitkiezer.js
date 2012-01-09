@@ -1,4 +1,7 @@
 // Copyright (c) 2012, HIT Scouting Nederland
+
+$(init);
+
 /**
  * Filtert/scoort met behulp van pictogrammen. 
  * @param color
@@ -150,6 +153,7 @@ var filter = {
 };
 
 function init() {
+	fixStupidBrowsers();
 	verwerkDeelnemerAantallen();
 	initVelden();
 	repaint();
@@ -160,7 +164,7 @@ function verwerkDeelnemerAantallen() {
 		$.each(hit.hitPlaatsen, function(p, plaats) {
 			$.each(plaats.kampen, function(k, kamp) {
 				$.each(inschrijvingen.kampen, function(i, inschrijving) {
-					if (kamp.shantiformuliernummer == inschrijving.formuliernummer) {
+					if (inschrijving != null && kamp.shantiformuliernummer == inschrijving.formuliernummer) {
 						kamp.gereserveerd = inschrijving.gereserveerd;
 					}
 				});				
@@ -274,7 +278,7 @@ function toonKampenMetFilter() {
 			  	.appendTo(li);
 			$("<span>")
 				.text("[" + (Math.round(10*kamp.score)/10) + "]")
-				.attr({title: "score", class: "score"})
+				.attr({title: "score", 'class': "score"})
 				.appendTo(li);
 			li.appendTo("#kampList");
 	    });
@@ -437,4 +441,17 @@ function createDate(year, month, day) {
 /** yyyy-mm-dd */
 function parseDate(s) {
 	return createDate(s.substring(0,4), s.substring(5, 7), s.substring(8,10));
+}
+
+function fixStupidBrowsers() {
+	if (!Array.indexOf) {
+		Array.prototype.indexOf = function (obj, start) {
+			for (var i = (start || 0); i < this.length; i++) {
+				if (this[i] == obj) {
+					return i;
+				}
+			}
+			return -1;
+		};
+	}
 }
