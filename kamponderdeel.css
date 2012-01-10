@@ -1,0 +1,14 @@
+/* Copyright (c) 2012, HIT Scouting Nederland */
+
+body {
+	font-family: Helvetica,Arial, Sans-Serif;
+	font-size: 11pt;
+}
+
+a, a:visited {
+	color: #31a529;
+}
+
+a:hover {
+	color: #19358d;
+}
