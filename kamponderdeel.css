@@ -12,3 +12,11 @@ a, a:visited {
 a:hover {
 	color: #19358d;
 }
+
+div#vol * {
+	vertical-align: middle;
+}
+
+div#vol img {
+	margin-right: .5em;
+}

@@ -35,15 +35,18 @@ function tekenIndicatie(kamp) {
 			title: "Dit kamp is vol!"
 		})
 		.appendTo($("#vol"));
+		$("<span>")
+			.text("Dit kamp is helemaal vol! Je kunt je alleen nog inschrijven op de gereserveerde plaatsen.")
+			.appendTo($("#vol"));
+	} else {
+		var procentVol = Math.round(100 * kamp.gereserveerd / kamp.maximumAantalDeelnemers);
+		var tekst = "Dit kamp is " + procentVol + "% vol."
+			+ " Aantal gereserveerde plaatsen: " + kamp.gereserveerd + "."
+			;
+		$("<span>")
+			.text(tekst)
+			.appendTo($("#vol"));
 	}
-	var procentVol = Math.round(100 * kamp.gereserveerd / kamp.maximumAantalDeelnemers);
-	var tekst = "Dit kamp is " + procentVol + "% vol."
-		+ " Gereserveerd: " + kamp.gereserveerd + " pers."
-		+ " Maximum: " + kamp.maximumAantalDeelnemers + " pers."
-		;
-	$("<span>")
-		.text(tekst)
-		.appendTo($("#vol"));
 }
 
 function verwerkDeelnemerAantallen() {
