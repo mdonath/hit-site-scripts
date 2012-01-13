@@ -288,24 +288,6 @@ function toonKampenMetFilter() {
 }
 
 /**
- * Past de naam aan op de manier waarop Joomla dat ook gedaan heeft.
- * @param naam De naam van het kamp.
- * @returns de gestripte naam waarmee de directe url gevormd is.
- */
-function urlified(naam) {
-	return naam
-		.replace(/ - /g, "-")
-		.replace(/ /g, "-")
-		.replace(/°/g, "d")
-		.replace(/º/g, "o")
-		.replace(/&/g, "a")
-		.toLowerCase()
-		.replace(/[^a-z0-9\-]/g, "")
-		.replace(/-+/g, "-")
-		;
-}
-
-/**
  * Teken de pictogrammen opnieuw en filter op basis van getoonde kampen.
  */
 function filterPictogrammen() {
@@ -414,7 +396,6 @@ function selectIcoonEvent(cellId) {
 	toonKampenMetFilter();
 }
 
-
 function minMaxJaar() {
 	var min = 100;
 	var max = 0;
@@ -428,30 +409,4 @@ function minMaxJaar() {
 
  	var hitjaar = parseDate(hit.vrijdag).getFullYear();
 	return {min: hitjaar - min, max: hitjaar - max};
-}
-
-function createDate(year, month, day) {
-	var result = new Date();
-	result.setYear(year);
-	result.setMonth(month - 1);
-	result.setDate(day);
-	return result;
-}
-
-/** yyyy-mm-dd */
-function parseDate(s) {
-	return createDate(s.substring(0,4), s.substring(5, 7), s.substring(8,10));
-}
-
-function fixStupidBrowsers() {
-	if (!Array.indexOf) {
-		Array.prototype.indexOf = function (obj, start) {
-			for (var i = (start || 0); i < this.length; i++) {
-				if (this[i] == obj) {
-					return i;
-				}
-			}
-			return -1;
-		};
-	}
 }

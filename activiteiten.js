@@ -11,7 +11,8 @@ function init() {
 		maakAllePlaatsen();
 	} else {
 		maakEnkelePlaats(plaatsParam);
-	}	
+	}
+	maakUpdateFooter();
 }
 
 function maakAllePlaatsen() {
@@ -59,6 +60,15 @@ function maakEnkelePlaatsHeader() {
 	$("<th>").attr("class", "kolom4").appendTo(tr);
 }
 
+function maakUpdateFooter() {
+	var laatstBijgewerkt = parseDateTime(inschrijvingen.timestamp);
+	var tr = $("<tr>").appendTo($("<tfoot>").appendTo("#overzicht"));
+	$("<th>")
+	 	.text("Laatst bijgewerkt op: " + toDateTime(laatstBijgewerkt))
+		.attr("colspan", "4")
+		.appendTo(tr);
+}
+
 function maakKampen(plaats) {
 	var tbody = $("<tbody>").appendTo("#overzicht");
  	$.each(plaats.kampen, function(j, kamp) {
@@ -100,70 +110,5 @@ function bepaalVol(kamp, iconen) {
 			title: "Dit kamp is vol!"
 		})
 		.appendTo(iconen);
-	}
-}
-/**
- * Past de naam aan op de manier waarop Joomla dat ook gedaan heeft.
- * @param naam De naam van het kamp.
- * @returns de gestripte naam waarmee de directe url gevormd is.
- */
-function urlified(naam) {
-	return naam
-		.replace(/ - /g, "-")
-		.replace(/ /g, "-")
-		.replace(/°/g, "d")
-		.replace(/º/g, "o")
-		.replace(/&/g, "a")
-		.toLowerCase()
-		.replace(/[^a-z0-9\-]/g, "")
-		.replace(/-+/g, "-")
-		;
-}
-
-/**
- * http://jquery-howto.blogspot.com/2009/09/get-url-parameters-values-with-jquery.html
- */
-function extend() {
-	$.extend({
-		getUrlVars: function() {
-			var vars = [], hash;
-			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-			for(var i = 0; i < hashes.length; i++) {
-				hash = hashes[i].split('=');
-				vars.push(hash[0]);
-				vars[hash[0]] = hash[1];
-			}
-			return vars;
-		},
-		getUrlVar: function(name) {
-			return $.getUrlVars()[name];
-		}
-	});
-}
-
-function verwerkDeelnemerAantallen() {
-	if (window.inschrijvingen) {
-		$.each(hit.hitPlaatsen, function(p, plaats) {
-			$.each(plaats.kampen, function(k, kamp) {
-				$.each(inschrijvingen.kampen, function(i, inschrijving) {
-					if (inschrijving != null && kamp.shantiformuliernummer == inschrijving.formuliernummer) {
-						kamp.gereserveerd = inschrijving.gereserveerd;
-					}
-				});				
-			});
-		});
-	}
-}
-
-function fixStupidBrowsers() {
-	if (!Array.indexOf) {
-		Array.prototype.indexOf = function (obj, start) {
-			for (var i = (start || 0); i < this.length; i++) {
-				if (this[i] == obj) {
-					return i;
-				}
-			}
-			return -1;
-		};
 	}
 }

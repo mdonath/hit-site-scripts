@@ -44,11 +44,15 @@ table, table td {
 .kolom4 {
 	
 }
-th {
+thead, tfoot {
 	background-color: #C7E0C5;
 }
 th a {
 	font-size: medium;
+}
+
+tfoot {
+	font-size: x-small;
 }
 
 td {
