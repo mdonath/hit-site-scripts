@@ -18,11 +18,10 @@ function verwerkDeelnemerAantallen() {
 	}
 }
 
-
 /**
  * Geeft een tekst terug waaraan af te lezen is wanneer de gegevens voor het laatst zijn bijgewerkt.
  * @returns {String}
- */
+ */30
 function laatstBijgewerktOp() {
 	if (window.inschrijvingen) {
 		return "Laatst bijgewerkt op: " + toDateTime(parseDateTime(inschrijvingen.timestamp));
@@ -41,25 +40,30 @@ function fuzzyIndicatieVol(kamp) {
 	if (isVol(kamp)) {
 		if (kamp.aantalDeelnemers < kamp.gereserveerd) {
 			var eenAantal = kamp.gereserveerd - kamp.aantalDeelnemers;
-			result = "Vol: alleen nog inschrijven op "+ eenAantal +" gereserveerde plaatsen.";
+			result = "Vol: alleen nog inschrijven op "+ eenAantal +" gereserveerde " + meervoudPlaats(eenAantal) + ".";
 		} else {
 			result = "Vol: inschrijven is niet meer mogelijk.";
 		}
 	} else {
-		var watMaaktHetKampVol = kamp.maximumAantalDeelnemers/10;
-		if (kamp.gereserveerd + watMaaktHetKampVol < kamp.maximumAantalDeelnemers) {
+		var watMaaktHetKampVol = Math.max(kamp.maximumAantalDeelnemers/10, kamp.subgroepsamenstellingMinimum);
+		var over = kamp.maximumAantalDeelnemers - kamp.gereserveerd;
+		if (watMaaktHetKampVol < over) {
 			if (kamp.gereserveerd == 0) {
 				result = "Nog ruim voldoende plaatsen beschikbaar.";
 			} else {
 				result = "Nog voldoende plaatsen beschikbaar.";
 			}
 		} else {
-			result = "Bijna vol: Nog enkele plaatsen beschikbaar.";
+			result = "Bijna vol: Nog "+ over +" "+ meervoudPlaats(over) +" beschikbaar.";
 		}
 	}
 	return result
 	// + " ["+kamp.minimumAantalDeelnemers + " (" + kamp.aantalDeelnemers + " | " + kamp.gereserveerd + ") " + kamp.maximumAantalDeelnemers + "]";
 	;
+}
+
+function meervoudPlaats(eenAantal) {
+	return "plaats" + ((eenAantal!=1) ? "en" : "");
 }
 
 /**
