@@ -1,5 +1,13 @@
 /* Copyright (c) 2012, HIT Scouting Nederland */
 
+.ifJavascriptAvailable {
+	display: none;
+}
+
+.ifNoJavascriptAvailable {
+	display: block;	
+}
+
 body {
 	font-family: Helvetica,Arial, Sans-Serif;
 	font-size: 11pt;

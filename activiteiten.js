@@ -6,6 +6,7 @@ function init() {
 	fixStupidBrowsers();
 	extend();
 	verwerkDeelnemerAantallen();
+	
 	var plaatsParam = $.getUrlVar('plaats');
 	if (!plaatsParam) {
 		maakAllePlaatsen();
@@ -61,12 +62,12 @@ function maakEnkelePlaatsHeader() {
 }
 
 function maakUpdateFooter() {
-	var laatstBijgewerkt = parseDateTime(inschrijvingen.timestamp);
-	var tr = $("<tr>").appendTo($("<tfoot>").appendTo("#overzicht"));
 	$("<th>")
-	 	.text("Laatst bijgewerkt op: " + toDateTime(laatstBijgewerkt))
+	 	.text(laatstBijgewerktOp())
 		.attr("colspan", "4")
-		.appendTo(tr);
+		.appendTo(
+				$("<tr>").appendTo($("<tfoot>").appendTo("#overzicht"))
+		);
 }
 
 function maakKampen(plaats) {
@@ -75,6 +76,7 @@ function maakKampen(plaats) {
  		maakKampOnderdeel(plaats, kamp, tbody);
 	});
 }
+
 function maakKampOnderdeel(plaats, kamp, parentElement) {
 	var tr = $("<tr>");
 	var th = $("<td>").attr("class", "kolom1").appendTo(tr);
@@ -82,13 +84,26 @@ function maakKampOnderdeel(plaats, kamp, parentElement) {
 	  	.text(kamp.naam)
 	  	.attr({ 
 	  		href: "/hits-in-" + plaats.naam.toLowerCase() + "/" + urlified(kamp.naam),
-	  		title: "Inschrijvingen: " + kamp.gereserveerd + " / " + kamp.maximumAantalDeelnemers
+	  		title: fuzzyIndicatieVol(kamp)
 	  	})
 	  	.appendTo(th);
 	$("<td>").text(kamp.minimumLeeftijd + " - " + kamp.maximumLeeftijd).attr("class", "kolom2").appendTo(tr);
 	$("<td>").text(kamp.groep).attr("class", "kolom3").appendTo(tr);
-	var iconen = $("<td>").attr("class", "kolom4").appendTo(tr);
-	bepaalVol(kamp, iconen);
+	voegIcoontjesToe(kamp, $("<td>").attr("class", "kolom4").appendTo(tr));
+	// $("<td>").text(fuzzyIndicatieVol(kamp)).appendTo(tr);
+	tr.appendTo(parentElement);
+}
+
+function voegIcoontjesToe(kamp, iconen) {
+	if (isVol(kamp)) {
+		$("<img>")
+		.attr({
+			src: "https://hit.scouting.nl/images/iconen25pix/vol.gif",
+			alt: "Dit kamp is vol!",
+			title: fuzzyIndicatieVol(kamp)
+		})
+		.appendTo(iconen);
+	}
 	$.each(kamp.iconen, function(i, icon) {
 		$("<img>")
 			.attr({
@@ -98,17 +113,5 @@ function maakKampOnderdeel(plaats, kamp, parentElement) {
 			})
 			.appendTo(iconen);
 	});
-	tr.appendTo(parentElement);
-}
 
-function bepaalVol(kamp, iconen) {
-	if (kamp.maximumAantalDeelnemers <= kamp.gereserveerd) {
-		$("<img>")
-		.attr({
-			src: "https://hit.scouting.nl/images/iconen25pix/vol.gif",
-			alt: "Dit kamp is vol!",
-			title: "Dit kamp is vol!"
-		})
-		.appendTo(iconen);
-	}
 }

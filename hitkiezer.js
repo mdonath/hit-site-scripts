@@ -159,20 +159,6 @@ function init() {
 	repaint();
 }
 
-function verwerkDeelnemerAantallen() {
-	if (window.inschrijvingen) {
-		$.each(hit.hitPlaatsen, function(p, plaats) {
-			$.each(plaats.kampen, function(k, kamp) {
-				$.each(inschrijvingen.kampen, function(i, inschrijving) {
-					if (inschrijving != null && kamp.shantiformuliernummer == inschrijving.formuliernummer) {
-						kamp.gereserveerd = inschrijving.gereserveerd;
-					}
-				});				
-			});
-		});
-	}
-}
-
 function initVelden() {
 
 	// Geboortedag
@@ -273,7 +259,9 @@ function toonKampenMetFilter() {
 			  	.text(kamp.naam + " in " + kamp.plaats)
 			  	.attr({
 			  		title: "leeftijd: " + kamp.minimumLeeftijd + "-" + kamp.maximumLeeftijd 
-			  			 + ", prijs € " + kamp.deelnamekosten,
+			  			 + ", prijs € " + kamp.deelnamekosten
+			  			 + ". " + fuzzyIndicatieVol(kamp)
+			  			 ,
 			  		href: "https://hit.scouting.nl/hits-in-" + kamp.plaats.toLowerCase() + "/" + urlified(kamp.naam) })
 			  	.appendTo(li);
 			$("<span>")

@@ -26,8 +26,10 @@
 <body>
 	<p>Met de HIT-kiezer kun je kijken welke HIT er bij jou past, op basis van je leeftijd
 	   tijdens de HIT, je budget, en de dingen die je absoluut wel of absoluut niet leuk vindt.
-	   Je gebruikt hem zo:
+	   <span class="ifJavascriptAvailable">Je gebruikt hem zo:</span>
 	</p>
+	<div class="ifNoJavascriptAvailable">Helaas, de HIT-kiezer heeft Javascript ondersteuning nodig, anders werkt het niet.</div>
+	<div class="ifJavascriptAvailable">
 	<form id="filter" name="filter">
 		<p><strong>Stap 1:</strong> Vul eerst je geboortedatum in. Je ziet nu alle HITs voor jouw leeftijd.</p>
 		<p>
@@ -69,6 +71,6 @@
 			<div id="kampen"></div>
 		</fieldset>
 	</form>
-
+	</div>
 </body>
 </html>
