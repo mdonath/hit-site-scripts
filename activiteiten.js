@@ -13,7 +13,7 @@ function init() {
 	} else {
 		maakEnkelePlaats(plaatsParam);
 	}
-	maakUpdateFooter();
+	maakUpdateFooter(plaatsParam);
 }
 
 function maakAllePlaatsen() {
@@ -61,13 +61,42 @@ function maakEnkelePlaatsHeader() {
 	$("<th>").attr("class", "kolom4").appendTo(tr);
 }
 
-function maakUpdateFooter() {
+function maakUpdateFooter(plaats) {
+	var totalen = berekenTotaalInschrijvingen(plaats);
+	var statistiek = "";
+	if (totalen.aantalDeelnemers > 100) {
+		statistiek = ", ingeschreven: " + totalen.aantalDeelnemers + ", gereserveerd: " + totalen.gereserveerd + ".";
+		//statistiek += " min: " + totalen.minimumCapaciteit + ", max: " + totalen.maximumCapaciteit + ".";
+	}
 	$("<th>")
-	 	.text(laatstBijgewerktOp())
+	 	.text(laatstBijgewerktOp() + statistiek)
 		.attr("colspan", "4")
 		.appendTo(
 				$("<tr>").appendTo($("<tfoot>").appendTo("#overzicht"))
 		);
+}
+
+function berekenTotaalInschrijvingen(alleenDezePlaats) {
+	var gereserveerd = 0;
+	var aantalDeelnemers = 0;
+	var minimumCapaciteit = 0;
+	var maximumCapaciteit = 0;
+	$.each(hit.hitPlaatsen, function(i, plaats) {
+		if (!alleenDezePlaats || alleenDezePlaats.toLowerCase() == plaats.naam.toLowerCase()) {
+			$.each(plaats.kampen, function(j, kamp) {
+				gereserveerd += kamp.gereserveerd;
+				aantalDeelnemers += kamp.aantalDeelnemers;
+				minimumCapaciteit += kamp.minimumAantalDeelnemers;
+				maximumCapaciteit += kamp.maximumAantalDeelnemers;
+			});
+		}
+	});
+	return {
+		'aantalDeelnemers': aantalDeelnemers,
+		'gereserveerd': gereserveerd,
+		'minimumCapaciteit': minimumCapaciteit,
+		'maximumCapaciteit': maximumCapaciteit
+		};
 }
 
 function maakKampen(plaats) {
@@ -90,7 +119,6 @@ function maakKampOnderdeel(plaats, kamp, parentElement) {
 	$("<td>").text(kamp.minimumLeeftijd + " - " + kamp.maximumLeeftijd).attr("class", "kolom2").appendTo(tr);
 	$("<td>").text(kamp.groep).attr("class", "kolom3").appendTo(tr);
 	voegIcoontjesToe(kamp, $("<td>").attr("class", "kolom4").appendTo(tr));
-	// $("<td>").text(fuzzyIndicatieVol(kamp)).appendTo(tr);
 	tr.appendTo(parentElement);
 }
 
