@@ -122,7 +122,7 @@ function parseDate(s) {
  * @returns {Date}
  */
 function parseDateTime(s) {
-	var regex = /([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2})/;
+	var regex = /([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]+):([0-9]+):([0-9]+)/;
 	var match = regex.exec(s);
 	return createDateTime(
 			match[1], match[2], match[3],
