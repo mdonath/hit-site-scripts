@@ -21,7 +21,7 @@ function verwerkDeelnemerAantallen() {
 /**
  * Geeft een tekst terug waaraan af te lezen is wanneer de gegevens voor het laatst zijn bijgewerkt.
  * @returns {String}
- */30
+ */
 function laatstBijgewerktOp() {
 	if (window.inschrijvingen) {
 		return "Laatst bijgewerkt op: " + toDateTime(parseDateTime(inschrijvingen.timestamp));

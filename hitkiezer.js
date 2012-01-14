@@ -55,6 +55,7 @@ var filter = {
 		"groen": new IconFilter('groen'),
 		// Icoontjes die negatief meetellen
 		"rood": new IconFilter('rood'),
+		"plaats": null,
 
 		loadFilters: function() {
 			this.groen.load();
@@ -85,7 +86,7 @@ var filter = {
 
 		bepaalScore: function (kamp) {
 			var score = 0.0;
-			if (this.filterLeeftijd(kamp) && this.filterBudget(kamp) && this.filterVol(kamp)) {
+			if (this.filterLeeftijd(kamp) && this.filterBudget(kamp) && this.filterVol(kamp) && this.filterPlaats(kamp)) {
 				if (this.budget != -1) {
 					var afstandTotMaxBudget = this.budget - kamp.deelnamekosten;
 					var factor = afstandTotMaxBudget / this.budget;
@@ -149,11 +150,15 @@ var filter = {
 		},
 		filterVol: function (kamp) { // het is ok als...
 			return kamp.gereserveerd < kamp.maximumAantalDeelnemers;
+		},
+		filterPlaats: function (kamp) {
+			return this.plaats == null || kamp.plaats.toLowerCase() == this.plaats.toLowerCase();
 		}
 };
 
 function init() {
 	fixStupidBrowsers();
+	extend();
 	verwerkDeelnemerAantallen();
 	initVelden();
 	repaint();
@@ -218,6 +223,8 @@ function initVelden() {
 	
 	$('.cookiestore').cookieBind();
 	filter.peildatum = parseDate(hit.vrijdag);
+	filter.plaats = $.getUrlVar('plaats');
+
 	updateGeboorteDatum();
 	updateBudget();
 	filter.loadFilters();
