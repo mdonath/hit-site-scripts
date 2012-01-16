@@ -22,8 +22,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 20,
 					"maximumAantalDeelnemers": 50,
-					"aantalDeelnemers": 0,
-					"gereserveerd": 0,
+					"aantalDeelnemers": 11,
+					"gereserveerd": 14,
 					"subgroepsamenstellingMinimum": 3,
 					"groep": "3 - 6 pers.",
 					"iconen": [
@@ -46,8 +46,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 24,
-					"aantalDeelnemers": 17,
-					"gereserveerd": 22,
+					"aantalDeelnemers": 20,
+					"gereserveerd": 24,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -95,7 +95,7 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 20,
-					"aantalDeelnemers": 11,
+					"aantalDeelnemers": 13,
 					"gereserveerd": 20,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 6 pers.",
@@ -140,8 +140,8 @@ var hit = {
 					"deelnamekosten": 35,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 50,
-					"aantalDeelnemers": 47,
-					"gereserveerd": 50,
+					"aantalDeelnemers": 49,
+					"gereserveerd": 54,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 pers.",
 					"iconen": [
@@ -163,8 +163,8 @@ var hit = {
 					"deelnamekosten": 50,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 20,
-					"aantalDeelnemers": 9,
-					"gereserveerd": 9,
+					"aantalDeelnemers": 11,
+					"gereserveerd": 13,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
 					"iconen": [
@@ -181,7 +181,7 @@ var hit = {
 						{ "volgorde": 33 , "tekst": "Gekookt door de staf", "bestandsnaam": "stafkookt" }	,
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
 						{ "volgorde": 38 , "tekst": "Zwemdiploma verplicht", "bestandsnaam": "zwem" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -193,8 +193,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 35,
-					"aantalDeelnemers": 7,
-					"gereserveerd": 8,
+					"aantalDeelnemers": 9,
+					"gereserveerd": 11,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
 					"iconen": [
@@ -213,7 +213,7 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 6,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 4,
+					"aantalDeelnemers": 5,
 					"gereserveerd": 5,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
@@ -257,8 +257,8 @@ var hit = {
 					"deelnamekosten": 35,
 					"minimumAantalDeelnemers": 12,
 					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 21,
-					"gereserveerd": 27,
+					"aantalDeelnemers": 25,
+					"gereserveerd": 34,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -271,7 +271,7 @@ var hit = {
 						{ "volgorde": 33 , "tekst": "Gekookt door de staf", "bestandsnaam": "stafkookt" }	,
 						{ "volgorde": 34 , "tekst": "Kennis van kaart en kompas op eenvoudig niveau", "bestandsnaam": "k_ks" }	,
 						{ "volgorde": 38 , "tekst": "Zwemdiploma verplicht", "bestandsnaam": "zwem" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -283,8 +283,8 @@ var hit = {
 					"deelnamekosten": 35,
 					"minimumAantalDeelnemers": 25,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 7,
-					"gereserveerd": 7,
+					"aantalDeelnemers": 11,
+					"gereserveerd": 12,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -297,7 +297,7 @@ var hit = {
 						{ "volgorde": 31 , "tekst": "Koken op houtvuur met pannen", "bestandsnaam": "opvuur" }	,
 						{ "volgorde": 32 , "tekst": "Koken op gas met pannen", "bestandsnaam": "gas" }	,
 						{ "volgorde": 34 , "tekst": "Kennis van kaart en kompas op eenvoudig niveau", "bestandsnaam": "k_ks" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -309,8 +309,8 @@ var hit = {
 					"deelnamekosten": 35,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 25,
-					"aantalDeelnemers": 11,
-					"gereserveerd": 11,
+					"aantalDeelnemers": 13,
+					"gereserveerd": 14,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
 					"iconen": [
@@ -323,7 +323,7 @@ var hit = {
 						{ "volgorde": 17 , "tekst": "Totale afstand is 15 km", "bestandsnaam": "15km" }	,
 						{ "volgorde": 33 , "tekst": "Gekookt door de staf", "bestandsnaam": "stafkookt" }	,
 						{ "volgorde": 34 , "tekst": "Kennis van kaart en kompas op eenvoudig niveau", "bestandsnaam": "k_ks" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -335,8 +335,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 8,
 					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 3,
-					"gereserveerd": 3,
+					"aantalDeelnemers": 5,
+					"gereserveerd": 5,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -352,7 +352,7 @@ var hit = {
 						{ "volgorde": 32 , "tekst": "Koken op gas met pannen", "bestandsnaam": "gas" }	,
 						{ "volgorde": 34 , "tekst": "Kennis van kaart en kompas op eenvoudig niveau", "bestandsnaam": "k_ks" }	,
 						{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				}
 			]	
@@ -370,8 +370,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 32,
-					"aantalDeelnemers": 11,
-					"gereserveerd": 13,
+					"aantalDeelnemers": 13,
+					"gereserveerd": 15,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 3 pers.",
 					"iconen": [
@@ -394,8 +394,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 7,
-					"gereserveerd": 7,
+					"aantalDeelnemers": 9,
+					"gereserveerd": 9,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
 					"iconen": [
@@ -418,7 +418,7 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 25,
-					"aantalDeelnemers": 22,
+					"aantalDeelnemers": 24,
 					"gereserveerd": 25,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
@@ -443,8 +443,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 12,
 					"maximumAantalDeelnemers": 26,
-					"aantalDeelnemers": 8,
-					"gereserveerd": 10,
+					"aantalDeelnemers": 18,
+					"gereserveerd": 20,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 pers.",
 					"iconen": [
@@ -469,7 +469,7 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 4,
+					"aantalDeelnemers": 5,
 					"gereserveerd": 7,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
@@ -495,8 +495,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 40,
 					"maximumAantalDeelnemers": 150,
-					"aantalDeelnemers": 9,
-					"gereserveerd": 27,
+					"aantalDeelnemers": 15,
+					"gereserveerd": 32,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 15 pers.",
 					"iconen": [
@@ -520,8 +520,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 20,
 					"maximumAantalDeelnemers": 45,
-					"aantalDeelnemers": 22,
-					"gereserveerd": 28,
+					"aantalDeelnemers": 27,
+					"gereserveerd": 31,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 3 pers.",
 					"iconen": [
@@ -544,8 +544,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 25,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 28,
-					"gereserveerd": 34,
+					"aantalDeelnemers": 38,
+					"gereserveerd": 40,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 3 pers.",
 					"iconen": [
@@ -566,8 +566,8 @@ var hit = {
 					"maximumLeeftijd": 55,
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 10,
-					"maximumAantalDeelnemers": 50,
-					"aantalDeelnemers": 45,
+					"maximumAantalDeelnemers": 52,
+					"aantalDeelnemers": 46,
 					"gereserveerd": 52,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 pers.",
@@ -590,8 +590,8 @@ var hit = {
 					"deelnamekosten": 50,
 					"minimumAantalDeelnemers": 20,
 					"maximumAantalDeelnemers": 24,
-					"aantalDeelnemers": 16,
-					"gereserveerd": 16,
+					"aantalDeelnemers": 17,
+					"gereserveerd": 17,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 3 pers.",
 					"iconen": [
@@ -614,8 +614,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 16,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 7,
-					"gereserveerd": 7,
+					"aantalDeelnemers": 8,
+					"gereserveerd": 10,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 3 pers.",
 					"iconen": [
@@ -640,8 +640,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 36,
-					"aantalDeelnemers": 2,
-					"gereserveerd": 2,
+					"aantalDeelnemers": 5,
+					"gereserveerd": 5,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
 					"iconen": [
@@ -688,9 +688,9 @@ var hit = {
 					"maximumLeeftijd": 14,
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 12,
-					"maximumAantalDeelnemers": 28,
-					"aantalDeelnemers": 17,
-					"gereserveerd": 22,
+					"maximumAantalDeelnemers": 25,
+					"aantalDeelnemers": 20,
+					"gereserveerd": 25,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -711,8 +711,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 25,
 					"maximumAantalDeelnemers": 58,
-					"aantalDeelnemers": 5,
-					"gereserveerd": 5,
+					"aantalDeelnemers": 10,
+					"gereserveerd": 14,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 6 pers.",
 					"iconen": [
@@ -740,8 +740,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 2,
-					"gereserveerd": 3,
+					"aantalDeelnemers": 4,
+					"gereserveerd": 5,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
 					"iconen": [
@@ -775,7 +775,7 @@ var hit = {
 						{ "volgorde": 10 , "tekst": "Overnachten in een zelfmeegenomen tent", "bestandsnaam": "tent" }	,
 						{ "volgorde": 25 , "tekst": "Totale afstand is 55 km", "bestandsnaam": "55km" }	,
 						{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -787,8 +787,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 30,
 					"maximumAantalDeelnemers": 50,
-					"aantalDeelnemers": 11,
-					"gereserveerd": 12,
+					"aantalDeelnemers": 19,
+					"gereserveerd": 22,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
 					"iconen": [
@@ -801,7 +801,7 @@ var hit = {
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
 						{ "volgorde": 38 , "tekst": "Zwemdiploma verplicht", "bestandsnaam": "zwem" }	,
 						{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -813,8 +813,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 26,
-					"aantalDeelnemers": 11,
-					"gereserveerd": 12,
+					"aantalDeelnemers": 14,
+					"gereserveerd": 17,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -835,7 +835,7 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 40,
 					"maximumAantalDeelnemers": 50,
-					"aantalDeelnemers": 44,
+					"aantalDeelnemers": 46,
 					"gereserveerd": 52,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
@@ -857,7 +857,7 @@ var hit = {
 					"deelnamekosten": 55,
 					"minimumAantalDeelnemers": 6,
 					"maximumAantalDeelnemers": 25,
-					"aantalDeelnemers": 18,
+					"aantalDeelnemers": 21,
 					"gereserveerd": 25,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
@@ -869,7 +869,7 @@ var hit = {
 						{ "volgorde": 30 , "tekst": "Koken op houtvuur zonder pannen", "bestandsnaam": "vuur" }	,
 						{ "volgorde": 31 , "tekst": "Koken op houtvuur met pannen", "bestandsnaam": "opvuur" }	,
 						{ "volgorde": 32 , "tekst": "Koken op gas met pannen", "bestandsnaam": "gas" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -881,8 +881,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 12,
 					"maximumAantalDeelnemers": 25,
-					"aantalDeelnemers": 16,
-					"gereserveerd": 19,
+					"aantalDeelnemers": 18,
+					"gereserveerd": 23,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -908,8 +908,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 20,
-					"aantalDeelnemers": 9,
-					"gereserveerd": 11,
+					"aantalDeelnemers": 11,
+					"gereserveerd": 13,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "n.v.t.",
 					"iconen": [
@@ -931,8 +931,8 @@ var hit = {
 					"deelnamekosten": 50,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 20,
-					"gereserveerd": 23,
+					"aantalDeelnemers": 26,
+					"gereserveerd": 30,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "n.v.t.",
 					"iconen": [
@@ -951,8 +951,8 @@ var hit = {
 					"deelnamekosten": 55,
 					"minimumAantalDeelnemers": 10,
 					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 15,
-					"gereserveerd": 19,
+					"aantalDeelnemers": 22,
+					"gereserveerd": 29,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -961,7 +961,7 @@ var hit = {
 						{ "volgorde": 9 , "tekst": "Inschrijven per groep", "bestandsnaam": "groepje" }	,
 						{ "volgorde": 12 , "tekst": "Overnachten zonder tent", "bestandsnaam": "nacht" }	,
 						{ "volgorde": 32 , "tekst": "Koken op gas met pannen", "bestandsnaam": "gas" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -973,8 +973,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 20,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 13,
-					"gereserveerd": 16,
+					"aantalDeelnemers": 25,
+					"gereserveerd": 29,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -995,7 +995,7 @@ var hit = {
 					"deelnamekosten": 70,
 					"minimumAantalDeelnemers": 12,
 					"maximumAantalDeelnemers": 16,
-					"aantalDeelnemers": 13,
+					"aantalDeelnemers": 14,
 					"gereserveerd": 16,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 3 pers.",
@@ -1060,7 +1060,7 @@ var hit = {
 					"deelnamekosten": 55,
 					"minimumAantalDeelnemers": 6,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 2,
+					"aantalDeelnemers": 4,
 					"gereserveerd": 5,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 8 pers.",
@@ -1074,7 +1074,7 @@ var hit = {
 						{ "volgorde": 32 , "tekst": "Koken op gas met pannen", "bestandsnaam": "gas" }	,
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
 						{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -1086,8 +1086,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 20,
 					"maximumAantalDeelnemers": 50,
-					"aantalDeelnemers": 6,
-					"gereserveerd": 13,
+					"aantalDeelnemers": 7,
+					"gereserveerd": 12,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 10 pers.",
 					"iconen": [
@@ -1110,8 +1110,8 @@ var hit = {
 					"deelnamekosten": 60,
 					"minimumAantalDeelnemers": 18,
 					"maximumAantalDeelnemers": 26,
-					"aantalDeelnemers": 22,
-					"gereserveerd": 25,
+					"aantalDeelnemers": 23,
+					"gereserveerd": 26,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "n.v.t.",
 					"iconen": [
@@ -1138,8 +1138,8 @@ var hit = {
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 20,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 12,
-					"gereserveerd": 12,
+					"aantalDeelnemers": 16,
+					"gereserveerd": 17,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
 					"iconen": [
@@ -1167,8 +1167,8 @@ var hit = {
 					"deelnamekosten": 55,
 					"minimumAantalDeelnemers": 25,
 					"maximumAantalDeelnemers": 50,
-					"aantalDeelnemers": 4,
-					"gereserveerd": 4,
+					"aantalDeelnemers": 5,
+					"gereserveerd": 6,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 5 pers.",
 					"iconen": [
@@ -1183,7 +1183,7 @@ var hit = {
 						{ "volgorde": 33 , "tekst": "Gekookt door de staf", "bestandsnaam": "stafkookt" }	,
 						{ "volgorde": 38 , "tekst": "Zwemdiploma verplicht", "bestandsnaam": "zwem" }	,
 						{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				},
 				{
@@ -1195,7 +1195,7 @@ var hit = {
 					"deelnamekosten": 55,
 					"minimumAantalDeelnemers": 60,
 					"maximumAantalDeelnemers": 80,
-					"aantalDeelnemers": 12,
+					"aantalDeelnemers": 15,
 					"gereserveerd": 22,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "n.v.t.",
@@ -1211,7 +1211,7 @@ var hit = {
 						{ "volgorde": 33 , "tekst": "Gekookt door de staf", "bestandsnaam": "stafkookt" }	,
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
 						{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	
 					]	
 				}
 			]	
@@ -1229,8 +1229,8 @@ var hit = {
 					"deelnamekosten": 55,
 					"minimumAantalDeelnemers": 25,
 					"maximumAantalDeelnemers": 45,
-					"aantalDeelnemers": 23,
-					"gereserveerd": 28,
+					"aantalDeelnemers": 32,
+					"gereserveerd": 38,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 4 pers.",
 					"iconen": [
@@ -1255,8 +1255,8 @@ var hit = {
 					"deelnamekosten": 50,
 					"minimumAantalDeelnemers": 18,
 					"maximumAantalDeelnemers": 42,
-					"aantalDeelnemers": 18,
-					"gereserveerd": 23,
+					"aantalDeelnemers": 21,
+					"gereserveerd": 22,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 6 pers.",
 					"iconen": [
@@ -1279,8 +1279,8 @@ var hit = {
 					"deelnamekosten": 70,
 					"minimumAantalDeelnemers": 22,
 					"maximumAantalDeelnemers": 35,
-					"aantalDeelnemers": 29,
-					"gereserveerd": 32,
+					"aantalDeelnemers": 31,
+					"gereserveerd": 34,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
 					"iconen": [
@@ -1291,7 +1291,7 @@ var hit = {
 						{ "volgorde": 19 , "tekst": "Totale afstand is 25 km", "bestandsnaam": "25km" }	,
 						{ "volgorde": 30 , "tekst": "Koken op houtvuur zonder pannen", "bestandsnaam": "vuur" }	,
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	,
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	,
 						{ "volgorde": 43 , "tekst": "Buitenland - ID kaart of paspoort verplicht", "bestandsnaam": "buitenland" }	
 					]	
 				},
@@ -1304,7 +1304,7 @@ var hit = {
 					"deelnamekosten": 70,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 22,
+					"aantalDeelnemers": 23,
 					"gereserveerd": 29,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
@@ -1316,7 +1316,7 @@ var hit = {
 						{ "volgorde": 31 , "tekst": "Koken op houtvuur met pannen", "bestandsnaam": "opvuur" }	,
 						{ "volgorde": 32 , "tekst": "Koken op gas met pannen", "bestandsnaam": "gas" }	,
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	,
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	,
 						{ "volgorde": 43 , "tekst": "Buitenland - ID kaart of paspoort verplicht", "bestandsnaam": "buitenland" }	
 					]	
 				},
@@ -1329,8 +1329,8 @@ var hit = {
 					"deelnamekosten": 70,
 					"minimumAantalDeelnemers": 24,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 14,
-					"gereserveerd": 21,
+					"aantalDeelnemers": 18,
+					"gereserveerd": 28,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 6 pers.",
 					"iconen": [
@@ -1342,7 +1342,7 @@ var hit = {
 						{ "volgorde": 31 , "tekst": "Koken op houtvuur met pannen", "bestandsnaam": "opvuur" }	,
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
 						{ "volgorde": 37 , "tekst": "Activiteit waarmee een insigne kan worden behaald", "bestandsnaam": "insigne" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	,
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	,
 						{ "volgorde": 43 , "tekst": "Buitenland - ID kaart of paspoort verplicht", "bestandsnaam": "buitenland" }	
 					]	
 				},
@@ -1354,8 +1354,8 @@ var hit = {
 					"maximumLeeftijd": 30,
 					"deelnamekosten": 50,
 					"minimumAantalDeelnemers": 16,
-					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 28,
+					"maximumAantalDeelnemers": 31,
+					"aantalDeelnemers": 29,
 					"gereserveerd": 35,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
@@ -1366,7 +1366,7 @@ var hit = {
 						{ "volgorde": 32 , "tekst": "Koken op gas met pannen", "bestandsnaam": "gas" }	,
 						{ "volgorde": 35 , "tekst": "Kennis van kaart en kompas op gevorderd niveau", "bestandsnaam": "k_kv" }	,
 						{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
-						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	,
+						{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	,
 						{ "volgorde": 43 , "tekst": "Buitenland - ID kaart of paspoort verplicht", "bestandsnaam": "buitenland" }	
 					]	
 				},
@@ -1379,8 +1379,8 @@ var hit = {
 					"deelnamekosten": 70,
 					"minimumAantalDeelnemers": 14,
 					"maximumAantalDeelnemers": 20,
-					"aantalDeelnemers": 5,
-					"gereserveerd": 5,
+					"aantalDeelnemers": 9,
+					"gereserveerd": 9,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 pers.",
 					"iconen": [
@@ -1400,8 +1400,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 24,
 					"maximumAantalDeelnemers": 32,
-					"aantalDeelnemers": 28,
-					"gereserveerd": 34,
+					"aantalDeelnemers": 29,
+					"gereserveerd": 33,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
 					"iconen": [
@@ -1423,8 +1423,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 30,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 27,
-					"gereserveerd": 29,
+					"aantalDeelnemers": 38,
+					"gereserveerd": 42,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 3 pers.",
 					"iconen": [
@@ -1445,8 +1445,8 @@ var hit = {
 					"deelnamekosten": 65,
 					"minimumAantalDeelnemers": 40,
 					"maximumAantalDeelnemers": 80,
-					"aantalDeelnemers": 2,
-					"gereserveerd": 4,
+					"aantalDeelnemers": 3,
+					"gereserveerd": 14,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 15 pers.",
 					"iconen": [
@@ -1473,8 +1473,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 3,
-					"gereserveerd": 3,
+					"aantalDeelnemers": 5,
+					"gereserveerd": 7,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 4 pers.",
 					"iconen": [
@@ -1497,8 +1497,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 40,
-					"aantalDeelnemers": 20,
-					"gereserveerd": 21,
+					"aantalDeelnemers": 33,
+					"gereserveerd": 35,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 6 pers.",
 					"iconen": [
@@ -1522,8 +1522,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 12,
 					"maximumAantalDeelnemers": 24,
-					"aantalDeelnemers": 21,
-					"gereserveerd": 23,
+					"aantalDeelnemers": 20,
+					"gereserveerd": 22,
 					"subgroepsamenstellingMinimum": 2,
 					"groep": "2 - 3 pers.",
 					"iconen": [
@@ -1546,8 +1546,8 @@ var hit = {
 					"deelnamekosten": 45,
 					"minimumAantalDeelnemers": 15,
 					"maximumAantalDeelnemers": 30,
-					"aantalDeelnemers": 11,
-					"gereserveerd": 12,
+					"aantalDeelnemers": 13,
+					"gereserveerd": 14,
 					"subgroepsamenstellingMinimum": 1,
 					"groep": "1 - 3 pers.",
 					"iconen": [
@@ -1604,7 +1604,7 @@ var hit = {
 		{ "volgorde": 39 , "tekst": "Mobieltje meenemen", "bestandsnaam": "mobieltje" }	,
 		{ "volgorde": 40 , "tekst": "Mobieltjes zijn verboden", "bestandsnaam": "geenmobieltje" }	,
 		{ "volgorde": 41 , "tekst": "Geschikt voor minder validen (rolstoel)", "bestandsnaam": "rolstoel" }	,
-		{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elemeneten", "bestandsnaam": "vraagt" }	,
+		{ "volgorde": 42 , "tekst": "Vraagteken Mysterie elementen", "bestandsnaam": "vraagt" }	,
 		{ "volgorde": 43 , "tekst": "Buitenland - ID kaart of paspoort verplicht", "bestandsnaam": "buitenland" }	
 	]
 };
