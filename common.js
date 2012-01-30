@@ -11,6 +11,7 @@ function verwerkDeelnemerAantallen() {
 					if (inschrijving != null && kamp.shantiformuliernummer == inschrijving.formuliernummer) {
 						kamp.gereserveerd = inschrijving.gereserveerd;
 						kamp.aantalDeelnemers = inschrijving.aantalDeelnemers;
+						kamp.maximumAantalDeelnemers = inschrijving.maximumAantalDeelnemers;
 					}
 				});				
 			});

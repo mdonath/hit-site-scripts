@@ -880,7 +880,7 @@ var hit = {
 					"maximumLeeftijd": 32,
 					"deelnamekosten": 40,
 					"minimumAantalDeelnemers": 12,
-					"maximumAantalDeelnemers": 25,
+					"maximumAantalDeelnemers": 40,
 					"aantalDeelnemers": 18,
 					"gereserveerd": 23,
 					"subgroepsamenstellingMinimum": 1,
