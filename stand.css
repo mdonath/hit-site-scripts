@@ -1,0 +1,117 @@
+/* Copyright (c) 2012, HIT Scouting Nederland */
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 11pt;
+}
+
+a,a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #19358d;
+	text-decoration: underline;
+}
+
+table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+th {
+	font-weight: normal;
+	text-align: right;
+}
+
+th h1 {
+	text-align: left;
+}
+
+tfoot th {
+	text-align: center;
+}
+
+.kampnaam {
+	vertical-align: top;
+}
+
+table#stand {
+	border-spacing: .5em;
+	border-collapse: separate;
+}
+
+.gaatnietdoor,.gaatnietdoor:visited {
+	background-color: red;
+	color: white;
+}
+
+.misschiennietdoor {
+	background-color: orange;
+}
+
+.minimum,.maximum,.gereserveerd,.ingeschreven,.nognodig,.over {
+	border: none !important;
+	text-align: right;
+}
+
+.misschiennietdoor,.misschiennietdoor:visited {
+	color: white;
+}
+
+.dataCell {
+	height: 2em;
+}
+
+.minMax {
+	white-space: nowrap;
+}
+
+.minimum,.maximum {
+	height: 3em;
+	display: inline-block;
+}
+
+.minimum {
+	background-color: #F88;
+}
+
+.maximum {
+	background-color: #8E8;
+}
+
+.actueel {
+	position: relative;
+	top: -2em;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.ingeschreven,.gereserveerd,.over {
+	height: 2em;
+}
+
+.ingeschreven {
+	background-color: black;
+	color: white;
+	display: inline-block;
+}
+
+.gereserveerd {
+	background-color: grey;
+	display: inline-block;
+	color: white;
+}
+
+.over {
+	background-color: yellow;
+	display: inline-block;
+}
+
+.nognodig {
+	background-color: red;
+	color: white;
+	position: relative;
+	display: inline-block;
+	top: -3.75em;
+}
