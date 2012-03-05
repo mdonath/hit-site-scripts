@@ -1,4 +1,14 @@
-Dit project bevat dynamische javascript wrappable pagina's voor de website van HIT Nederland van Scouting.
+Dit project bevat dynamische javascript wrappable pagina's voor de website van HIT Nederland van Scouting. Daarnaast ook 
+
 Bevat op dit moment:
-- HIT Kiezer
-- HIT Activiteiten
+
+Wrappable pagina's:
+===================
+- HIT Kiezer (hitkiezer.html) : Kies interactief de kampen die voor deelnemer geschikt zijn.
+- HIT Activiteiten (activiteiten.html) : Overzicht van activiteiten, met parameters ook voor alleen een plaats.
+- Kamponderdeel (kamponderdeel.html) : Toont hoeveel ruimte een specifiek kamp nog heeft.
+
+Niet-wrappable (kan wel, maar is niet de opzet):
+================================================
+- Stand (stand.html) : Toont per project / plaats / kamp de huidige stand van de inschrijving.
+- Geld (geld.html) : Toont macro-economische cijfers over de HIT :-).
