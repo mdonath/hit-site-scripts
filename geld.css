@@ -1,0 +1,35 @@
+/* Copyright (c) 2012, HIT Scouting Nederland */
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 11pt;
+}
+
+table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	text-align: right;
+	border: 1px solid black;
+}
+
+.y2011 {
+	background-color: lime;
+}
+
+.y2012 {
+	background-color: hotpink;
+}
+
+.y2013a {
+	background-color: orange;
+}
+
+.y2013b {
+	background-color: olive;
+}
